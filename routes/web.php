@@ -40,3 +40,6 @@ Route::put('actualizar-algo', function () {
 Route::delete('eliminar-algo', function () {
     
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
